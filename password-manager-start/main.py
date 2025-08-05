@@ -83,24 +83,24 @@ email_username = Label(text="Email/Username:")
 password = Label(text="Password:")
 password.grid(column=0,row=3)
 generate_password = Button(text="Generate Password",command=create_password)
-add = Button(text="Add", width=29, command=save)
-search = Button(text="Search Password",command=search)
+add = Button(text="Add", width=35, command=save)
+search = Button(text="Search",command=search)
 website_input = Entry(width=35)
 email_input = Entry(width=35)
-password_input = Entry(width=35)
+password_input = Entry(width=21)
 
 
 
 website.grid(column=0,row=1)
 email_username.grid(column=0,row=2)
-generate_password.grid(column=3,row=3)
-website_input.grid(column=1,row=1,columnspan=2)
+generate_password.grid(column=2,row=3)
+website_input.grid(column=1,row=1,sticky="EW")
 website_input.focus()
-email_input.grid(column=1,row=2,columnspan=2)
+email_input.grid(column=1,row=2,sticky="EW")
 email_input.insert(0,"bio5@pitt.edu")
-password_input.grid(column=1,row=3)
+password_input.grid(column=1,row=3, sticky="EW")
 add.grid(column=1,row=4,columnspan=2)
-search.grid(column=3,row=1)
+search.grid(column=2,row=1,sticky="EW")
 
 
 
